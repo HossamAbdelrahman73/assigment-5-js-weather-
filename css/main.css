@@ -1,0 +1,265 @@
+:root {
+  --main-color: #e65f78;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: #1e202b;
+  color: white;
+}
+.navbar .logo {
+  width: 60px;
+}
+
+.navbar .navbar-brand .small {
+  padding-left: 10px;
+  font-size: 10px;
+  font-weight: 300;
+  color: rgb(191, 193, 200);
+}
+.navbar .navbar-brand .small h1 {
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
+
+.navbar .nav-item .nav-link {
+  color: white !important;
+
+  /* border-radius: 10px; */
+  font-size: 14px;
+  font-weight: 400;
+  color: #009ad8;
+  padding: 2px 25px;
+  margin-inline: 10px;
+}
+
+.navbar .nav-item .nav-link:hover {
+  border: 2px solid #009ad8;
+}
+.navbar .nav-item .nav-link.active {
+  border: 2px solid #009ad8;
+}
+
+/* ===============location */
+#location {
+  padding-top: 60px;
+  background-image: url(../img/banner.png);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+.content-location {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  color: white;
+}
+
+.content-location input,
+.content-copyRight input {
+  background-color: #222530;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#location button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  color: white;
+  padding: 13px 35px;
+  background-color: #009ad8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========black-background */
+
+.black-background {
+  background-color: #1e202b;
+  /* height: 45vh; */
+}
+.black-background .background-content {
+  transform: translateY(-110px);
+}
+
+.weather .city {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(191, 193, 200);
+}
+
+.curr-day .weather,
+.nextNext-day {
+  background-color: #323544;
+}
+
+.curr-day .day-date,
+.nextNext-day .day-date {
+  background-color: #2d303d;
+  color: #bfc1c8;
+}
+.next-day {
+  background-color: #262936;
+}
+
+.next-day .day-date {
+  background-color: #222530;
+  color: #bfc1c8;
+}
+
+.curr-day .weather .temperature {
+  font-size: 90px;
+  font-weight: 700;
+  color: white;
+}
+.curr-day .weather .temperature span {
+  font-size: 90px;
+  font-weight: 700;
+  color: white;
+}
+
+.weather .situation {
+  font-size: 15px;
+  font-weight: 400;
+  color: #009ad8;
+  font-weight: 300;
+}
+
+.weather .icon-text-curr {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(191, 193, 200);
+}
+
+.next-day .weather .temperature,
+.nextNext-day .weather .temperature {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.next-day .weather .special-degree,
+.nextNext-day .weather .special-degree {
+  font-size: 19px;
+  font-weight: 700;
+  color: rgb(191, 193, 200);
+}
+.next-day .weather .special-degree sup,
+.nextNext-day .weather .special-degree sup {
+  font-size: 19px;
+  font-weight: 700;
+  color: rgb(191, 193, 200);
+}
+
+@media screen and (min-width: 992px) {
+  .curr-day .day-date {
+    border-top-left-radius: 15px;
+  }
+  .curr-day .weather {
+    border-bottom-left-radius: 15px;
+  }
+
+  .nextNext-day .day-date {
+    border-top-right-radius: 15px;
+  }
+  .nextNext-day {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .nextNext-day .weather {
+    border-bottom-right-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .curr-day .day-date {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .nextNext-day {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .nextNext-day .weather {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+
+/* ============copyRight */
+.copy-right {
+  background-color: #262936;
+}
+
+.content-copyRight {
+  width: 65%;
+}
+
+.content-copyRight .icons {
+  width: fit-content;
+  padding: 10px 0;
+}
+.icon-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  background-color: #1e202b;
+  color: #009ad8;
+  transition: 0.3s;
+}
+
+.icon-border:hover {
+  background-color: #009ad8;
+  color: white;
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+}
+.content-copyRight button {
+  position: absolute;
+  top: 4px;
+  right: 19px;
+  color: white;
+  padding: 10px 15px !important;
+  background-color: #009ad8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-copyRight button:hover {
+  background-color: #009bd8e2;
+  color: white;
+}
+
+.text-copy {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(191, 193, 200);
+}
+
+@media (min-width: 1400px) {
+  .container-md {
+    width: 1140px;
+  }
+}
